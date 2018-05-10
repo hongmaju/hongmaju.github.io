@@ -272,7 +272,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/09/我的第一篇文章/" itemprop="url">我的第一篇文章</a></h1>
+                <a class="post-title-link" href="/2018/05/09/我的第一篇文章/" itemprop="url">Github Pages搭建博客</a></h1>
         
 
         <div class="post-meta">
@@ -324,7 +324,36 @@
       
         
           
-            
+            <h2 id="一：Github设置"><a href="#一：Github设置" class="headerlink" title="一：Github设置"></a>一：Github设置</h2><ul>
+<li>1、注册属于你自己的Github账号</li>
+<li>2、创建仓库<ul>
+<li>在Github首页右上角头像左侧加号点选择 New repositor(新存储库),如：hongmaju.github.io</li>
+</ul>
+</li>
+<li>3、开启Github Pages<ul>
+<li>点击Choose a theme选择一个主题，然后点select theme<h2 id="二：Hexo设置"><a href="#二：Hexo设置" class="headerlink" title="二：Hexo设置"></a>二：Hexo设置</h2></li>
+</ul>
+</li>
+<li>1、安装Node.js</li>
+<li>2、安装Git</li>
+<li>3、安装Hexo<ul>
+<li>在你需要安装Hexo的目录下(新建一个文件夹)右键选择 Git Bash<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init <span class="comment">#初始化网站</span></span><br><span class="line">npm install</span><br><span class="line">hexo g <span class="comment">#生成或 hexo generate</span></span><br><span class="line">hexo s <span class="comment">#启动本地服务器 或者 hexo  server</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p>这一步之后就可以通过<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>  查看了</p>
+<h2 id="三：Hexo部署"><a href="#三：Hexo部署" class="headerlink" title="三：Hexo部署"></a>三：Hexo部署</h2><ul>
+<li>安装部署插件<br>npm install hexo-deployer-git –save</li>
+<li><p>修改根目录下_config.yml文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: http://github.com/hongmaju/hongmaju.github.io.git <span class="comment">#这里的网址填你自己的</span></span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>部署</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这时再刷新 <a href="https://hongmaju.github.io" target="_blank" rel="noopener">https://hongmaju.github.io</a> 就可以看到你的博客了。</p>
+
           
         
       
