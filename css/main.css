@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7888c1;
+  background: #9fb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3122,7 +3122,9 @@ pre .javascript .function {
   }
 }
 body {
-  background: url("https://raw.githubusercontent.com/hongmaju/blog/master/%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/source/_imags/background2.jpg");
+/**background:url(https://raw.githubusercontent.com/hongmaju/blog/master/%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/source/_imags/background2.jpg);
+**/
+  background: url("https://source.unsplash.com/assets/header-photo-965bb662a61b37419fddb7766b44f16373955cb359f68a1c34da6ebaf59601cc.jpg");
   background-attachment: fixed;
   background-position: 50% 50%;
 }
