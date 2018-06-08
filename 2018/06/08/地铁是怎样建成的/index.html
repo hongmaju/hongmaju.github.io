@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Horse-32x32.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Horse-16x16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="地铁是怎样建成的？1.地铁的诞生   19世纪中叶，英国伦敦街头交通堵塞严重。一位名叫查尔斯.皮尔逊的律师想到火车跑得很快，怎样让火车跑进城市呢？一次，查尔斯看到墙角的老鼠洞里，一只老鼠在跑来跑去，他提出一个妙想：让火车在地下跑起来！1863年，这个“异想天开”得以实现——世界上第一条地铁在伦敦诞生了！随后，世界大城市纷纷建造地铁。这种速度快不堵车、环保又舒适的交通工具，深受大家喜爱。  1.1">
+<meta name="keywords" content="web,web前端,js,javascript,程序猿,博客,码农">
+<meta property="og:type" content="article">
+<meta property="og:title" content="地铁是怎么建成的">
+<meta property="og:url" content="http://yoursite.com/2018/06/08/地铁是怎样建成的/index.html">
+<meta property="og:site_name" content="李凯的博客">
+<meta property="og:description" content="地铁是怎样建成的？1.地铁的诞生   19世纪中叶，英国伦敦街头交通堵塞严重。一位名叫查尔斯.皮尔逊的律师想到火车跑得很快，怎样让火车跑进城市呢？一次，查尔斯看到墙角的老鼠洞里，一只老鼠在跑来跑去，他提出一个妙想：让火车在地下跑起来！1863年，这个“异想天开”得以实现——世界上第一条地铁在伦敦诞生了！随后，世界大城市纷纷建造地铁。这种速度快不堵车、环保又舒适的交通工具，深受大家喜爱。  1.1">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://dn-qdan.qbox.me/cover/2015/3/21/0d4ed34dad7be17f30826e604e46f54c?imageView2/1/w/640/h/300/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/ecbb5d9361a60f8920fca356ea05c397?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/c11b81c12d676931feb27ca0b36d6670?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/1adc297b4e29a44d51e96ff79bebbc66?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/a80c542b1ac15b8cc7412070bb95264d?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/5dfacef6d79c239b066680a03c0e004c?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/bf518c13ade4372bec463580523a3d5d?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/81a3b88f0614fa81e4e1bd34b0a41ed5?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/392927b20e7bf85f9b95c01439b1c1b7?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/76f4777a99d58c0a477faafc267d0c6f?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/c3c7989b55a415cb9d26a159b4be2f28?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/fcef53c582f49a515a807461797ca8b0?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/556a16ec6b2925a9f1377541b036f629?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/8ed8d50c2f1bcfc5717054cbe5e79ac0?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/cdc64877a693820f637e4c12e9fc4a52?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/e635a11729a0cbf63fc76be71ef6de59?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/a8de28d7be6754c4140309fa9414c345?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/55d33d3de987859b143c03de1d5ef976?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/0035094d60b52b018c04f409a23320fb?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/a6e91681b51ee56c9c57f251805e29df?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/4a2ef7ab10dc86226fd8ae15b907297e?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/efbbad50501e05068e65d7049cc38f85?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/3b716cee4a976ead36620ab15d8b6b4b?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/e9ab305cb636f09530fc7ed696d0e93b?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/011358f0de19e9d678385c2ad17b7f80?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/24b4c576df77d31f817cf86a6d9db5b1?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/cddd9a7b85211221e8ae2f00b44199c8?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/ea3591cb19b63726b9e84a20b7000594?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/93dcaa656b29861b96ca99b0a789f5cf?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/d6f452e8c142be43ebc2bf6f99305199?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:image" content="https://dn-qdan.qbox.me/attachment/2015/3/21/c526c643477958f88aad2968e6b0757e?imageView2/2/w/640/h/640/interlace/1">
+<meta property="og:updated_time" content="2018-06-08T12:11:05.888Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="地铁是怎么建成的">
+<meta name="twitter:description" content="地铁是怎样建成的？1.地铁的诞生   19世纪中叶，英国伦敦街头交通堵塞严重。一位名叫查尔斯.皮尔逊的律师想到火车跑得很快，怎样让火车跑进城市呢？一次，查尔斯看到墙角的老鼠洞里，一只老鼠在跑来跑去，他提出一个妙想：让火车在地下跑起来！1863年，这个“异想天开”得以实现——世界上第一条地铁在伦敦诞生了！随后，世界大城市纷纷建造地铁。这种速度快不堵车、环保又舒适的交通工具，深受大家喜爱。  1.1">
+<meta name="twitter:image" content="https://dn-qdan.qbox.me/cover/2015/3/21/0d4ed34dad7be17f30826e604e46f54c?imageView2/1/w/640/h/300/interlace/1">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/08/地铁是怎样建成的/"/>
+
+
+
+
+
+  <title>地铁是怎么建成的 | 李凯的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">李凯的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">生活不只是眼前的苟且,还有诗和远方.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/08/地铁是怎样建成的/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李凯">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李凯的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">地铁是怎么建成的</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-08T22:37:21+08:00">
+                2018-06-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://dn-qdan.qbox.me/cover/2015/3/21/0d4ed34dad7be17f30826e604e46f54c?imageView2/1/w/640/h/300/interlace/1" alt=""></p>
+<h1 id="地铁是怎样建成的？"><a href="#地铁是怎样建成的？" class="headerlink" title="地铁是怎样建成的？"></a>地铁是怎样建成的？</h1><h2 id="1-地铁的诞生"><a href="#1-地铁的诞生" class="headerlink" title="1.地铁的诞生"></a>1.地铁的诞生</h2><p> <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/ecbb5d9361a60f8920fca356ea05c397?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p> 19世纪中叶，英国伦敦街头交通堵塞严重。一位名叫查尔斯.皮尔逊的律师想到火车跑得很快，怎样让火车跑进城市呢？一次，查尔斯看到墙角的老鼠洞里，一只老鼠在跑来跑去，他提出一个妙想：让火车在地下跑起来！1863年，这个“异想天开”得以实现——世界上第一条地铁在伦敦诞生了！随后，世界大城市纷纷建造地铁。这种速度快不堵车、环保又舒适的交通工具，深受大家喜爱。</p>
+<ul>
+<li><h2 id="1-1-建设地铁不容易"><a href="#1-1-建设地铁不容易" class="headerlink" title="1.1  建设地铁不容易"></a>1.1  建设地铁不容易</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/c11b81c12d676931feb27ca0b36d6670?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  那么，地铁是怎样建成的呢？</p>
+<p>  建设地铁可不是件简单的事情哦！地铁是高密度、特大型、综合性轨道交通运输系统，涉及40多个技术专业，得花好几年的时间才能建成哦。</p>
+</li>
+<li><h2 id="1-2-地铁线网，蜘蛛网一般的地铁线路"><a href="#1-2-地铁线网，蜘蛛网一般的地铁线路" class="headerlink" title="1.2  地铁线网，蜘蛛网一般的地铁线路"></a>1.2  地铁线网，蜘蛛网一般的地铁线路</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/1adc297b4e29a44d51e96ff79bebbc66?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  在地铁建造之前，工程师首先要规划列车行驶的线路。图中紫色的地铁线路像蜘蛛网一样四通八达，称为地铁线网。</p>
+<p>  地铁线网规划是在城市发展战略、总体规划、土地利用规划的基础上，根据客流预测分析，充分考虑交通与城市发展之间的关系，选择方便市民出行、能适应城市可持续发展的布局。</p>
+</li>
+</ul>
+<p>##2.  广州地质构造与勘察</p>
+<ul>
+<li><h2 id="2-1-广州——“地质博物馆”"><a href="#2-1-广州——“地质博物馆”" class="headerlink" title="2.1  广州——“地质博物馆”"></a>2.1  广州——“地质博物馆”</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/a80c542b1ac15b8cc7412070bb95264d?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  因为地铁一般是建在地下，所以我们还要充分了解地下世界。图中的“大蛋糕”就是浓缩版的地质构造示意图，可以看到地下是由很复杂的岩土构成的。</p>
+<p>  在3亿多年前的古生代，广州绝大部分地区为浅海，沉积了以碳酸盐岩为主的岩系，之后中生代沉积了以红色碎层岩为主的岩系，并伴随着岩浆岩的侵入，经过多年的地质运动、水网发育，至今已形成了非常复杂的地质——位于华南板块构造的断陷盆地内，不同岩土类交错组合，还有复杂的断裂带和地下河。广州被称为“地质博物馆”名副其实。</p>
+</li>
+<li><h2 id="2-2-工程地质勘察，让我们有了透视眼"><a href="#2-2-工程地质勘察，让我们有了透视眼" class="headerlink" title="2.2  工程地质勘察，让我们有了透视眼"></a>2.2  工程地质勘察，让我们有了透视眼</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/5dfacef6d79c239b066680a03c0e004c?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  可是我们没有透视眼，怎样弄清楚地下的情况呢？这时就要依靠工程地质勘察了。</p>
+<p>  钻孔取样勘探</p>
+<p>  使用地质钻机在地表下钻出深深的孔，然后用空心钻头将岩土样带出地面进行取样分析。一般钻孔间距为几十米，遇到地下溶洞、孤石等复杂地质，钻孔间距缩减为几米。</p>
+<p>  电法勘探</p>
+<p>  根据各类岩土电学性质的差异来分析地质情况。</p>
+<p>  磁法勘探</p>
+<p>  通过观测和分析由岩土的磁性差异所引起的磁异常，进行地质研究。</p>
+<p>  声波法勘探</p>
+<p>  通过在两孔间发射声波，然后根据不同岩土分界面上反射回来的声波进行地质分析。</p>
+</li>
+</ul>
+<p>##3.  地铁车站的确定</p>
+<ul>
+<li><h2 id="3-1-地铁车站的确定"><a href="#3-1-地铁车站的确定" class="headerlink" title="3.1  地铁车站的确定"></a>3.1  地铁车站的确定</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/bf518c13ade4372bec463580523a3d5d?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  列车行驶的路线确定了，那地铁车站又要建在哪里呢？</p>
+<p>  依据城市规划，地铁车站一般会选择建在住宅区、商业区等主要客流集散点，方便市民出行。同时考虑土地利用、与其它交通方式换乘便捷、周边环境条件等因素。</p>
+</li>
+</ul>
+<p>##4.  明挖法施工</p>
+<ul>
+<li><h2 id="4-1-安全又经济的明挖法施工"><a href="#4-1-安全又经济的明挖法施工" class="headerlink" title="4.1  安全又经济的明挖法施工"></a>4.1  安全又经济的明挖法施工</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/81a3b88f0614fa81e4e1bd34b0a41ed5?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  正式开工前，要准备一块满足施工需求的场地。地铁车站一般是从地面自上而下进行开挖，这就是安全又经济的明挖法施工。</p>
+<p>  开挖前，需要处理影响施工的建筑、绿化和管线等，还要增加临时道路，以减少建设地铁时对交通出行的影响。</p>
+<p>  A绿化迁移</p>
+<p>  施工范围内的绿色植物，需要进行迁移，在施工完成后进行恢复。</p>
+<p>  B交通疏解</p>
+<p>  为保障交通顺畅，原道路进行拓宽或改道，形成新的道路，以保障车辆和行人正常通行。施工完成后再进行道路恢复。</p>
+<p>  C房屋拆迁</p>
+<p>  为了保障施工和周边安全，在工程施工影响范围内的建筑，需要保护或拆迁。</p>
+<p>  D管线迁改</p>
+<p>  城市地下埋藏了错综复杂的管线，如电力、通信、燃气、自来水管道等，在施工前需要进行保护或迁改。</p>
+</li>
+<li><h2 id="4-2-开始建造地铁车站的“外壳”"><a href="#4-2-开始建造地铁车站的“外壳”" class="headerlink" title="4.2  开始建造地铁车站的“外壳”"></a>4.2  开始建造地铁车站的“外壳”</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/392927b20e7bf85f9b95c01439b1c1b7?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  有了施工场地后，我们开来了很多机器，准备施工啦！首先，我们来建造地铁车站的“外壳”，例如地下连续墙，保护基坑与周边安全。</p>
+<p>  ①成槽</p>
+<p>  使用成槽设备在基坑的周边形成一段段深槽。</p>
+<p>  ②吊装钢筋笼</p>
+<p>  把一根根钢筋绑扎成与深槽形状吻合的钢筋笼，再通过起重机将它吊进深槽中。</p>
+<p>  ③灌注混凝土</p>
+<p>  在吊装了钢筋笼的槽内，灌注混凝土，筑成一段钢筋混凝土墙。</p>
+<p>  ④形成封闭的地下连续墙</p>
+<p>  将每一块钢筋混凝土墙连接起来，形成一个将基坑围住的保护墙，防止基坑坍塌，保护周边安全。</p>
+</li>
+<li><h2 id="4-3-在深坑里面建造地铁车站"><a href="#4-3-在深坑里面建造地铁车站" class="headerlink" title="4.3  在深坑里面建造地铁车站"></a>4.3  在深坑里面建造地铁车站</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/76f4777a99d58c0a477faafc267d0c6f?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  在连续墙完成后，便开始一边开挖一边支撑，形成一个巨大的方形深坑。我们就是在这个深坑里面建造地铁车站。</p>
+<p>  ⑤基坑开挖</p>
+<p>  在保护墙围合的空间内进行土方开挖，基坑形状像一个大大的长方形盒子。</p>
+<p>  ⑥搭建支撑梁</p>
+<p>  每挖到一定深度，就要在地下连续墙两侧之间架设支撑梁，保护基坑安全。</p>
+<p>  ⑦基坑底部防水施工</p>
+<p>  在基坑底部铺设防水卷材。</p>
+<p>  ⑧绑扎钢筋网</p>
+<p>  绑扎车站主体结构的钢筋网。</p>
+</li>
+<li><h2 id="4-4-地铁车站雏形渐渐成型"><a href="#4-4-地铁车站雏形渐渐成型" class="headerlink" title="4.4  地铁车站雏形渐渐成型"></a>4.4  地铁车站雏形渐渐成型</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/c3c7989b55a415cb9d26a159b4be2f28?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  在搭好的钢筋网上灌注混凝土，这时地铁车站的雏形渐渐成型了。</p>
+<p>  ⑨灌注混凝土</p>
+<p>  往安装好模板的钢筋网灌注混凝土，依次建造底板、侧墙、中板和顶板。</p>
+</li>
+<li><h2 id="4-5-恢复管线和道路"><a href="#4-5-恢复管线和道路" class="headerlink" title="4.5  恢复管线和道路"></a>4.5  恢复管线和道路</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/fcef53c582f49a515a807461797ca8b0?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  车站主体建成后，就可以恢复管线和道路了。</p>
+</li>
+</ul>
+<p>##5.  铺盖法与矿山法施工</p>
+<ul>
+<li><h2 id="5-1-铺盖法施工"><a href="#5-1-铺盖法施工" class="headerlink" title="5.1  铺盖法施工"></a>5.1  铺盖法施工</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/556a16ec6b2925a9f1377541b036f629?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  在交通疏解困难的道路上，为减少对交通的影响，有时会在地面上铺一个大盖板，作为临时路面供车辆通行，底下进行施工，这就是铺盖法施工。</p>
+<p>  先在道路底下建造中立柱及围护结构，在其上方搭建支撑梁，然后在支撑梁上铺上盖板，供车辆通行，在盖板下方进行施工。铺盖法一定程度兼顾了行车与施工，但会增加施工的难度。</p>
+</li>
+<li><h2 id="5-2-矿山法暗挖施工"><a href="#5-2-矿山法暗挖施工" class="headerlink" title="5.2  矿山法暗挖施工"></a>5.2  矿山法暗挖施工</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/8ed8d50c2f1bcfc5717054cbe5e79ac0?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  如果施工的场地周围有很多密集的楼房和道路，那该怎么办呢？在地址条件允许的情况下，我们可以采取矿山法暗挖施工。</p>
+<p>  建一个小小的施工竖井，施工人员从竖井下去，像“土拔鼠”一样在地下建造车站或隧道。</p>
+</li>
+<li><h2 id="5-3-矿山法暗挖施工，按顺序一小块一小块地挖"><a href="#5-3-矿山法暗挖施工，按顺序一小块一小块地挖" class="headerlink" title="5.3  矿山法暗挖施工，按顺序一小块一小块地挖"></a>5.3  矿山法暗挖施工，按顺序一小块一小块地挖</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/cdc64877a693820f637e4c12e9fc4a52?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  矿山法暗挖施工时，要按顺序一小块一小块地挖，慢慢地挖出一个地下空间来。</p>
+<p>  当遇到富含地下水的地层，无法保证支撑隧道壁的稳定时，可选择冷冻法施工。利用人工制冷技术使地层冻结，增加其强度和稳定性后，在进行施工。</p>
+<p>  一些地铁车站、通道、区间就是通过矿山法暗挖施工来完成的。</p>
+</li>
+</ul>
+<p>##6.  “钢铁蚯蚓”盾构机</p>
+<p>   个人感觉最有意思的一个部分。</p>
+<ul>
+<li><h2 id="6-1-地铁隧道大部分用盾构法施工修建"><a href="#6-1-地铁隧道大部分用盾构法施工修建" class="headerlink" title="6.1  地铁隧道大部分用盾构法施工修建"></a>6.1  地铁隧道大部分用盾构法施工修建</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/e635a11729a0cbf63fc76be71ef6de59?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  说完车站后，我们就开始讲隧道啦！这里要用到一种非常特殊的机器，它的名字叫盾构机。地铁隧道大部分都是用这样的盾构法施工来修建的。</p>
+<p>  ①工人在管片厂将一片片盾构管片预制好，再运送到施工现场。</p>
+<p>  ②通过龙门吊，将管片吊入盾构始发井。</p>
+<p>  ③盾构管片搬运车将管片运送进隧道。</p>
+<p>  ④盾构机对管片进行拼装，形成隧道。</p>
+</li>
+<li><h2 id="6-2-盾构机就像一条“钢铁蚯蚓”"><a href="#6-2-盾构机就像一条“钢铁蚯蚓”" class="headerlink" title="6.2  盾构机就像一条“钢铁蚯蚓”"></a>6.2  盾构机就像一条“钢铁蚯蚓”</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/a8de28d7be6754c4140309fa9414c345?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  盾构机就像一条“钢铁蚯蚓”，它经过的地方，一条长长的隧道就建成了。</p>
+<p>  A控制室</p>
+<p>  控制盾构机推力、速度、方向等掘进参数的操作室。</p>
+<p>  B螺旋排土器</p>
+<p>  螺旋排土器将刀盘切削下来的泥土和石块运送到皮带传送机，最后再由渣土车运出隧道。</p>
+<p>  C管片组装机</p>
+<p>  管片组装机将盾构管片依次进行拼装，一般6片管片组成一圈隧道，管片的宽度常为1.5米。</p>
+</li>
+<li><h2 id="6-3-“钢铁蚯蚓”在漆黑的地下前进不迷路"><a href="#6-3-“钢铁蚯蚓”在漆黑的地下前进不迷路" class="headerlink" title="6.3  “钢铁蚯蚓”在漆黑的地下前进不迷路"></a>6.3  “钢铁蚯蚓”在漆黑的地下前进不迷路</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/55d33d3de987859b143c03de1d5ef976?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  盾构机在漆黑的地下掘进会迷路吗？</p>
+<p>  当然不会，先进的盾构机安装了高精度的测量系统，能够动态显示当前位置相对于隧道设计轴线的位置偏差，操作人员可及时调整掘进状态，使盾构机沿着正确的方向掘进。</p>
+<p>  盾构机是只能前进不能后退的，它会挖到下一个地铁站或竖井，完成任务后吊出地面。</p>
+</li>
+</ul>
+<p>##7.  消灭“拦路虎” -- 孤石和溶洞</p>
+<ul>
+<li><h2 id="7-1-隧道一般是两边高中间低，这样有利于节能"><a href="#7-1-隧道一般是两边高中间低，这样有利于节能" class="headerlink" title="7.1  隧道一般是两边高中间低，这样有利于节能"></a>7.1  隧道一般是两边高中间低，这样有利于节能</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/0035094d60b52b018c04f409a23320fb?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  出站的列车由于下坡而很快地提高速度，进站的列车借助于上坡来降低速度，这种建造方法在运营时更加节能降耗。</p>
+<p>  风亭：地铁车站与隧道需要进行通风，风亭就是地铁与地面的换风口，一直保持通风状态，风亭排出的气体是无害的。</p>
+<p>  防淹门：当地铁隧道穿越江河或湖泊时，万一遇到了水倒灌进隧道的险情，这时防淹门将紧急关闭，保护地铁安全。</p>
+<p>  排水泵：收集隧道内的积水，排至市政管网。</p>
+</li>
+<li><h2 id="7-2-“拦路虎”-孤石"><a href="#7-2-“拦路虎”-孤石" class="headerlink" title="7.2  “拦路虎” -- 孤石"></a>7.2  “拦路虎” -- 孤石</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/a6e91681b51ee56c9c57f251805e29df?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  盾构机在地下挖掘时，经常会冒出一些“拦路虎”。像孤石这种又大又硬的石头，盾构机的“牙齿”啃不动它，这时就要把它挖掉或炸碎。</p>
+<p>  ①施工人员从地面往下钻孔，一直钻到孤石处。</p>
+<p>  ②填进炸药，将孤石炸碎。</p>
+</li>
+<li><h2 id="7-3-“怪兽大嘴”-地下溶洞"><a href="#7-3-“怪兽大嘴”-地下溶洞" class="headerlink" title="7.3  “怪兽大嘴” -- 地下溶洞"></a>7.3  “怪兽大嘴” -- 地下溶洞</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/4a2ef7ab10dc86226fd8ae15b907297e?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  还有更危险的情况，就是遇到地下溶洞。溶洞就像“怪兽大嘴”，如果不妥善处理，盾构机会跌入溶洞，造成严重的事故。</p>
+<p>  ①施工人员钻一条直达溶洞的孔。</p>
+<p>  ②在孔中灌注水泥浆，将溶洞填满，盾构机才能通过。</p>
+</li>
+</ul>
+<p>##8.  怎样江底挖掘和保护地面建筑？</p>
+<ul>
+<li><h2 id="8-1-其他障碍！"><a href="#8-1-其他障碍！" class="headerlink" title="8.1  其他障碍！"></a>8.1  其他障碍！</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/efbbad50501e05068e65d7049cc38f85?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  除了孤石和溶洞，地下还有各种各样的障碍。</p>
+<p>  上软下硬地层：当遇到上面软弱、下面坚硬的地层时，由于受力不均，易造成刀盘损坏及地面塌方，需要谨慎推进或提前处理。</p>
+<p>  花岗岩残积土：这种地层遇水则变泥浆，可能带来地表沉降，甚至塌方的风险，需提前进行降水处理。</p>
+<p>  煤层瓦斯：遇到地下煤层瓦斯，需小心检测，有毒气的话，须排出后方可施工。</p>
+</li>
+<li><h2 id="8-2-大江边江底挖掘危及重重"><a href="#8-2-大江边江底挖掘危及重重" class="headerlink" title="8.2  大江边江底挖掘危及重重"></a>8.2  大江边江底挖掘危及重重</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/3b716cee4a976ead36620ab15d8b6b4b?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  盾构机穿过重重地质挑战，来到了大江边。在江底挖掘时风险很大，盾构机需小心翼翼地挖掘前行。</p>
+<p>  在江底，经常会遇到上软下硬地层、砂层、淤泥层和承压水等阻挠。盾构机掘进时需要做好监测，谨慎控制。盾构机一旦在江底出现故障，检修异常困难，风险巨大。</p>
+</li>
+<li><h2 id="8-3-保护地面建筑同样重要"><a href="#8-3-保护地面建筑同样重要" class="headerlink" title="8.3  保护地面建筑同样重要"></a>8.3  保护地面建筑同样重要</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/e9ab305cb636f09530fc7ed696d0e93b?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  盾构施工时，除了要解决地下的难题，也要保护地面上的建筑，如房屋、高架桥、铁路等。</p>
+<p>  盾构下穿高铁：盾构机在穿越高铁时要求很高，为防止地面沉降而影响线路运输，需对隧道上方地层进行加固。</p>
+<p>  桩基托换：地铁隧道需要穿过房屋或高架的桩基时，要为建筑物建造新的桩基。然后处理挡住盾构路线的桩基，新的桩基形成新的受力体系，不影响建筑物的安全。</p>
+<p>  ①在铁路的两旁分别建造两个竖井。</p>
+<p>  ②在计划建造的隧道上方，利用竖井对土体进行预加固。</p>
+<p>  ③盾构机穿过竖井和土体，完成下穿高铁的施工。</p>
+</li>
+</ul>
+<p>##9.  沉管法与高架法施工</p>
+<ul>
+<li><h2 id="9-1-地铁隧道与市政道路合建过江，用“沉管法”"><a href="#9-1-地铁隧道与市政道路合建过江，用“沉管法”" class="headerlink" title="9.1  地铁隧道与市政道路合建过江，用“沉管法”"></a>9.1  地铁隧道与市政道路合建过江，用“沉管法”</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/011358f0de19e9d678385c2ad17b7f80?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  当地铁隧道与市政道路合建过江时，聪明的工程师想出了另外一种工法——“沉管法”。将岸上预制好的一节节隧道管段沉到江底进行拼装，形成隧道。</p>
+<p>  ①先在船台上或干坞中制作隧道管段，管段两端用临时封堵门密封。</p>
+<p>  ②将隧道管段拖运到隧道设计位置——基槽上方。</p>
+<p>  ③往管段中加载，使其沉到基槽内，并用水力压接法将相邻管段连接，然后拆除封堵门，使各节管段连通成为整体的隧道。</p>
+</li>
+<li><h2 id="9-2-地铁跑着跑着，咦，突然就到地面高处了！"><a href="#9-2-地铁跑着跑着，咦，突然就到地面高处了！" class="headerlink" title="9.2  地铁跑着跑着，咦，突然就到地面高处了！"></a>9.2  地铁跑着跑着，咦，突然就到地面高处了！</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/24b4c576df77d31f817cf86a6d9db5b1?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  有时候，地铁跑着跑着，咦，突然就到地面高处了！这里采用了高架法施工。</p>
+<p>  由架桥机将预制好的一段段梁片依次进行拼接，形成高架桥。</p>
+</li>
+</ul>
+<h2 id="10-地铁建设的三个关键节点"><a href="#10-地铁建设的三个关键节点" class="headerlink" title="10.  地铁建设的三个关键节点"></a>10.  地铁建设的三个关键节点</h2><ul>
+<li><h2 id="10-1-隧道、轨通、电通是地铁建设的三个关键节点。"><a href="#10-1-隧道、轨通、电通是地铁建设的三个关键节点。" class="headerlink" title="10.1  隧道、轨通、电通是地铁建设的三个关键节点。"></a>10.1  隧道、轨通、电通是地铁建设的三个关键节点。</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/cddd9a7b85211221e8ae2f00b44199c8?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  隧道完工后，要铺设轨道、电缆、通信等设施。 隧道、轨通、电通是地铁建设的三个关键节点。</p>
+</li>
+<li><h2 id="10-2-基础设施都建完啦，大家是不是就可以去坐地铁了呢？"><a href="#10-2-基础设施都建完啦，大家是不是就可以去坐地铁了呢？" class="headerlink" title="10.2  基础设施都建完啦，大家是不是就可以去坐地铁了呢？"></a>10.2  基础设施都建完啦，大家是不是就可以去坐地铁了呢？</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/ea3591cb19b63726b9e84a20b7000594?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  基础设施都建完啦，大家是不是就可以去坐地铁了呢？</p>
+<p>  还不行，我们还要装修车站、安装机电设备、系统联调、验收和试运行。</p>
+<p>  机电设备是各种机械和电气设备的总称，为列车正常安全运行和乘客便利舒适搭乘地铁提供综合保障。</p>
+</li>
+<li><h2 id="10-3-列车的家-车辆段"><a href="#10-3-列车的家-车辆段" class="headerlink" title="10.3  列车的家 -- 车辆段"></a>10.3  列车的家 -- 车辆段</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/93dcaa656b29861b96ca99b0a789f5cf?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  列车不能一直跑。它也是需要休息和养护的。我们要给它们建一个“家”——车辆段。</p>
+<p>  车辆段是对地铁车辆进行运营管理、停放、维修及保养的场所。</p>
+<p>  那地铁是如何做到安全、准点、快捷、舒适地运行呢？因为它有一个聪明的“大脑”——地铁控制指挥中心。</p>
+<p>  控制指挥中心是对全线列车运行、电力供应、车站设备运行、防火报警、环境监控、票务管理及乘客服务等，全程进行调度、指挥和监控的“中枢”。</p>
+</li>
+</ul>
+<p>##11.  持续做好地铁保护</p>
+<ul>
+<li><h2 id="11-1-地铁保护范围"><a href="#11-1-地铁保护范围" class="headerlink" title="11.1  地铁保护范围"></a>11.1  地铁保护范围</h2><p>  <img src="https://dn-qdan.qbox.me/attachment/2015/3/21/d6f452e8c142be43ebc2bf6f99305199?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  从开始建造一直到开通之后，我们还要持续不断地进行地铁保护工作，防止其它工程建设影响地铁。</p>
+<p>  地铁保护范围：</p>
+<p>  保护区内施工不得影响地铁各个系统安全正常运营，范围包括：</p>
+<p>  1.地下车站与隧道结构外边线外侧50m内；</p>
+<p>  2.地面和高架车站以及线路轨道结构外边线外侧30m内；</p>
+<p>  3.出入口、风亭、变电站等附属建、构筑物结构外边线外侧10m内；</p>
+<p>  4.轨道交通过江隧道结构外边线100m内。</p>
+</li>
+</ul>
+<p>##12.  （完）</p>
+<p><img src="https://dn-qdan.qbox.me/attachment/2015/3/21/c526c643477958f88aad2968e6b0757e?imageView2/2/w/640/h/640/interlace/1" alt=""></p>
+<p>  漫长而艰辛的施工过程结束了，第一辆地铁列车呼啸出发。与朋友们一起坐地铁时，可别忘了向他们介绍地铁是怎样建成的哦！（完）</p>
+<p>##13.原文地址</p>
+<pre><code>https://qdan.me/list/VNjQeaT3WYs_NuKR?utm_source=share&amp;utm_medium=web&amp;utm_term=weixin&amp;utm_campaign=qdan&amp;from=timeline&amp;isappinstalled=0
+</code></pre>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wcPay.png" alt="李凯 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/zfPay.jpg" alt="李凯 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+<div>
+  
+    
+<div style="text-align:center;color: #ccc;font-size:14px;">
+------ 本文结束 ------</div>
+<br/>
+<div style="border: 1px solid black">
+<div style="margin-left:10px">
+<span style="font-weight:blod">版权声明</span>
+<div style="background-color:#000;"><img src="https://creativecommons.org/wp-content/uploads/2016/06/cc.logo_.white_.png" ></div>
+<br/>
+<p style="font-size: 10px;line-height: 30px">
+<a href="https://hongmaju.github.io/" style="color:#258FC6">hongmaju's Notes</a> by <a href="https://hongmaju.github.io/" style="color:#258FC6">hongmaju</a>
+
+is licensed under a
+<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#258FC6">Creative Commons BY-NC-ND 4.0 International License</a>
+.<br/>
+由<a href="https://hongmaju.github.io/" style="color:#258FC6">hongmaju</a>
+创作并维护的
+<a href="https://hongmaju.github.io/" style="color:#258FC6">hongmaju's Notes</a>
+博客采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#258FC6">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br/>
+本文首发于<a href="https://hongmaju.github.io/" style="color:#258FC6">hongmaju's Notes</a>
+ 博客（ <a href="https://hongmaju.github.io/" style="color:#258FC6">https://hongmaju.github.io/</a> ），版权所有，侵权必究。</p>
+</div>
+</div>
+
+
+  
+</div>
+
+
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/17/PWA初体验/" rel="next" title="PWA初体验">
+                <i class="fa fa-chevron-left"></i> PWA初体验
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">李凯</p>
+              <p class="site-description motion-element" itemprop="description">2013年毕业于河南工业大学，计算架应用技术专业,擅长C#语言和前端技能，目前正就职于河南郑州某企业。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          <div>
+<object type="application/x-shockwave-flash" style="outline:none;" data="https://cdn.abowman.com/widgets/hamster/hamster.swf?" width="220" height="225">
+<param name="movie" value="https://cdn.abowman.com/widgets/hamster/hamster.swf?">
+</param>
+<param name="AllowScriptAccess" value="always">
+</param><param name="wmode" value="opaque"></param>
+</object>
+</div>
+<div>
+<a href="https://info.flagcounter.com/fSGZ">
+<img style="width: 220px;" src="http://s01.flagcounter.com/count2/fSGZ/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
+</a>
+</div>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#地铁是怎样建成的？"><span class="nav-number">1.</span> <span class="nav-text">地铁是怎样建成的？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-地铁的诞生"><span class="nav-number">1.1.</span> <span class="nav-text">1.地铁的诞生</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-建设地铁不容易"><span class="nav-number">1.2.</span> <span class="nav-text">1.1  建设地铁不容易</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-地铁线网，蜘蛛网一般的地铁线路"><span class="nav-number">1.3.</span> <span class="nav-text">1.2  地铁线网，蜘蛛网一般的地铁线路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-广州——“地质博物馆”"><span class="nav-number">1.4.</span> <span class="nav-text">2.1  广州——“地质博物馆”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-工程地质勘察，让我们有了透视眼"><span class="nav-number">1.5.</span> <span class="nav-text">2.2  工程地质勘察，让我们有了透视眼</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-地铁车站的确定"><span class="nav-number">1.6.</span> <span class="nav-text">3.1  地铁车站的确定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-安全又经济的明挖法施工"><span class="nav-number">1.7.</span> <span class="nav-text">4.1  安全又经济的明挖法施工</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-开始建造地铁车站的“外壳”"><span class="nav-number">1.8.</span> <span class="nav-text">4.2  开始建造地铁车站的“外壳”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-在深坑里面建造地铁车站"><span class="nav-number">1.9.</span> <span class="nav-text">4.3  在深坑里面建造地铁车站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-地铁车站雏形渐渐成型"><span class="nav-number">1.10.</span> <span class="nav-text">4.4  地铁车站雏形渐渐成型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5-恢复管线和道路"><span class="nav-number">1.11.</span> <span class="nav-text">4.5  恢复管线和道路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-铺盖法施工"><span class="nav-number">1.12.</span> <span class="nav-text">5.1  铺盖法施工</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-矿山法暗挖施工"><span class="nav-number">1.13.</span> <span class="nav-text">5.2  矿山法暗挖施工</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-矿山法暗挖施工，按顺序一小块一小块地挖"><span class="nav-number">1.14.</span> <span class="nav-text">5.3  矿山法暗挖施工，按顺序一小块一小块地挖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-地铁隧道大部分用盾构法施工修建"><span class="nav-number">1.15.</span> <span class="nav-text">6.1  地铁隧道大部分用盾构法施工修建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2-盾构机就像一条“钢铁蚯蚓”"><span class="nav-number">1.16.</span> <span class="nav-text">6.2  盾构机就像一条“钢铁蚯蚓”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-3-“钢铁蚯蚓”在漆黑的地下前进不迷路"><span class="nav-number">1.17.</span> <span class="nav-text">6.3  “钢铁蚯蚓”在漆黑的地下前进不迷路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-1-隧道一般是两边高中间低，这样有利于节能"><span class="nav-number">1.18.</span> <span class="nav-text">7.1  隧道一般是两边高中间低，这样有利于节能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-2-“拦路虎”-孤石"><span class="nav-number">1.19.</span> <span class="nav-text">7.2  “拦路虎” -- 孤石</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-3-“怪兽大嘴”-地下溶洞"><span class="nav-number">1.20.</span> <span class="nav-text">7.3  “怪兽大嘴” -- 地下溶洞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-1-其他障碍！"><span class="nav-number">1.21.</span> <span class="nav-text">8.1  其他障碍！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-2-大江边江底挖掘危及重重"><span class="nav-number">1.22.</span> <span class="nav-text">8.2  大江边江底挖掘危及重重</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-3-保护地面建筑同样重要"><span class="nav-number">1.23.</span> <span class="nav-text">8.3  保护地面建筑同样重要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-1-地铁隧道与市政道路合建过江，用“沉管法”"><span class="nav-number">1.24.</span> <span class="nav-text">9.1  地铁隧道与市政道路合建过江，用“沉管法”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-2-地铁跑着跑着，咦，突然就到地面高处了！"><span class="nav-number">1.25.</span> <span class="nav-text">9.2  地铁跑着跑着，咦，突然就到地面高处了！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-地铁建设的三个关键节点"><span class="nav-number">1.26.</span> <span class="nav-text">10.  地铁建设的三个关键节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-1-隧道、轨通、电通是地铁建设的三个关键节点。"><span class="nav-number">1.27.</span> <span class="nav-text">10.1  隧道、轨通、电通是地铁建设的三个关键节点。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-2-基础设施都建完啦，大家是不是就可以去坐地铁了呢？"><span class="nav-number">1.28.</span> <span class="nav-text">10.2  基础设施都建完啦，大家是不是就可以去坐地铁了呢？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-3-列车的家-车辆段"><span class="nav-number">1.29.</span> <span class="nav-text">10.3  列车的家 -- 车辆段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-1-地铁保护范围"><span class="nav-number">1.30.</span> <span class="nav-text">11.1  地铁保护范围</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李凯</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
